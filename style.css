@@ -1,0 +1,97 @@
+body {
+  background-color: #ffeef2; /* rose clair */
+  color: #2c003e; /* violet foncé */
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center; /* centre tout le texte */
+}
+
+h1 {
+  font-size: 40px;
+  color: #ff0080; /* rose flashy */
+  margin-top: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-size: 28px;
+  color: #00bfbf; /* turquoise */
+  margin-top: 30px;
+  font-style: italic;
+  border-bottom: 2px solid #ffaa00; /* jaune doré */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #a100ff; /* violet flashy */
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+p a {
+  color: #ff6600;
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ff1493; /* rose vif */
+  text-decoration: underline;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  display: block;
+}
+
+/* Spécifique à l'image du castor */
+img[src*="bcUAim5.png"] {
+  max-width: 300px;
+}
+
+h3 a,
+h2 a,
+h1 a {
+  text-decoration: underline;
+}
+body {
+  background: linear-gradient(-45deg, #ff69b4, #00ffff, #ffa500, #9400d3);
+  background-size: 400% 400%;
+  animation: discoBG 10s ease infinite;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+@keyframes discoBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+img[src*="bcUAim5.png"] {
+  max-width: 300px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
